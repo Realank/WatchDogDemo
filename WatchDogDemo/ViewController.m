@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "RLKWatchDog.h"
 
 @interface ViewController ()
 
+@property (nonatomic, strong) RLKWatchDog* watchdog;
 @end
 
 @implementation ViewController
@@ -17,13 +19,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _watchdog = [RLKWatchDog watchDogWithTimeout:5];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)start:(id)sender {
+    [_watchdog startWithTimeoutBlock:^{
+        NSLog(@"timeout");
+    }];
 }
 
+- (IBAction)feed:(id)sender {
+    [_watchdog feed];
+}
+
+- (IBAction)stop:(id)sender {
+    [_watchdog stop];
+}
 
 @end

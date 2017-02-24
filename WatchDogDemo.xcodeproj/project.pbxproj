@@ -15,6 +15,7 @@
 		8CCCEA801E5FBB46007F7FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCCEA7E1E5FBB46007F7FE4 /* LaunchScreen.storyboard */; };
 		8CCCEA8B1E5FBB47007F7FE4 /* WatchDogDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCEA8A1E5FBB47007F7FE4 /* WatchDogDemoTests.m */; };
 		8CCCEA961E5FBB47007F7FE4 /* WatchDogDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCEA951E5FBB47007F7FE4 /* WatchDogDemoUITests.m */; };
+		8CCCEAA51E5FBC03007F7FE4 /* RLKWatchDog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCCEAA41E5FBC03007F7FE4 /* RLKWatchDog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8CCCEA911E5FBB47007F7FE4 /* WatchDogDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchDogDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CCCEA951E5FBB47007F7FE4 /* WatchDogDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchDogDemoUITests.m; sourceTree = "<group>"; };
 		8CCCEA971E5FBB47007F7FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CCCEAA31E5FBC03007F7FE4 /* RLKWatchDog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLKWatchDog.h; sourceTree = "<group>"; };
+		8CCCEAA41E5FBC03007F7FE4 /* RLKWatchDog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLKWatchDog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 			children = (
 				8CCCEA731E5FBB46007F7FE4 /* AppDelegate.h */,
 				8CCCEA741E5FBB46007F7FE4 /* AppDelegate.m */,
+				8CCCEAA31E5FBC03007F7FE4 /* RLKWatchDog.h */,
+				8CCCEAA41E5FBC03007F7FE4 /* RLKWatchDog.m */,
 				8CCCEA761E5FBB46007F7FE4 /* ViewController.h */,
 				8CCCEA771E5FBB46007F7FE4 /* ViewController.m */,
 				8CCCEA791E5FBB46007F7FE4 /* Main.storyboard */,
@@ -278,6 +283,7 @@
 			files = (
 				8CCCEA781E5FBB46007F7FE4 /* ViewController.m in Sources */,
 				8CCCEA751E5FBB46007F7FE4 /* AppDelegate.m in Sources */,
+				8CCCEAA51E5FBC03007F7FE4 /* RLKWatchDog.m in Sources */,
 				8CCCEA721E5FBB46007F7FE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,6 +522,7 @@
 				8CCCEA9C1E5FBB47007F7FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CCCEA9D1E5FBB47007F7FE4 /* Build configuration list for PBXNativeTarget "WatchDogDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +531,7 @@
 				8CCCEA9F1E5FBB47007F7FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CCCEAA01E5FBB47007F7FE4 /* Build configuration list for PBXNativeTarget "WatchDogDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +540,7 @@
 				8CCCEAA21E5FBB47007F7FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
